@@ -93,7 +93,6 @@ $shadow: rgba(0, 0, 0, 0.1);
 }
 
 // scaleable rating mixin!
-// omg this is great
 @mixin rating($width, $star-size, $margin) {
   &--full {
     background-image: url("../../assets/images/icons/star-fill.svg");
@@ -110,33 +109,4 @@ $shadow: rgba(0, 0, 0, 0.1);
   &--4 {
     width: 80%;
   }
-}
-
-///////////////
-//   OTHER   //
-///////////////
-
-* {
-  box-sizing: border-box !important;
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-  li {
-    list-style-type: none;
-  }
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-}
-
-hr {
-  border:none;
-  border-bottom: 1px solid $shadow;
-  margin-bottom: 40px;
 }

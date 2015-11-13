@@ -3,22 +3,22 @@
 $bg--color: #F8F8F8;
 
 .featured {
+  background-color: white;
   width: 100%;
-  padding: 0 17px 40px 17px;
+  padding: 40px 17px 40px 17px;
   @include shadow(0px, 1px, 0px, rgba(0, 0, 0, 0.1));
   margin-bottom: 1px;
 }
 
 
 .filter {
-  margin: 40px 23px 40px 23px;
+  margin: 0 23px 40px 23px;
   height: 40px;
 }
 
 .apps {
   background-color: $bg--color;
   padding: 80px 0 0 40px;
-  overflow: hidden;
 }
 
 .apps--marketing, .apps--analytics {
@@ -35,7 +35,6 @@ $bg--color: #F8F8F8;
   height: 480px;
   width: 100%;
   padding: 40px 10% 10px 10%;
-  margin-bottom: 20px;
   @include shadow(0px, 1px, 0px, rgba(0, 0, 0, 0.1));
 }
 
@@ -44,15 +43,52 @@ $bg--color: #F8F8F8;
 }
 
 .about {
-  width: 60%;
-  padding: 15px 0 0 10%;
+  width: 100%;
+  background-color: white;
+  padding: em(60) 30% em(60) 10%;
   .large-rating, a.highlight.review {
     display: inline-block;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   span.review {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+}
+
+* {
+  box-sizing: border-box !important;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+hr {
+  border:none;
+  border-bottom: 1px solid $shadow;
+  margin-bottom: 40px;
+}
+
+html, body {
+  height: 100%;
+  background-color: $bg--color;
+}
+
+body.light {
+  background-color: white;
+  height: 100%;
 }

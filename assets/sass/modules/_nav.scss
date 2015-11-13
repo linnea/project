@@ -1,0 +1,30 @@
+// navbar module
+.nav {
+  background-color: white;
+  width: 100%;
+  min-height: 54px;
+  text-align: center;
+  vertical-align: middle;
+  @include shadow(0px, 1px, 0px, $shadow);
+  @include text(18, 54, 600);
+  padding: 0 42px 0 42px;
+  margin-bottom: 1px;
+  z-index:2;
+
+  &__link {
+    display: inline;
+
+    &.left {
+      font-weight: normal;
+    }
+  }
+}
+
+.nav__icon--back {
+  margin: -2px 10px 0 0;
+}
+
+.nav__icon--mobile img {
+  height: 25px;
+  display: inline-block;
+}
