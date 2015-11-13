@@ -1,16 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="44px" height="44px" viewBox="0 0 44 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
-    <title>Next</title>
+    <title>Oval 44 + Path 51</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" in="SourceAlpha" operator="dilate" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.14 0" in="shadowBlurOuter1" type="matrix" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
     <g id="App-Center" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="1.0-All-Apps" sketch:type="MSArtboardGroup" transform="translate(-1372.000000, -402.000000)">
+        <g id="1.0-All-Apps" sketch:type="MSArtboardGroup" transform="translate(-27.000000, -403.000000)">
             <g id="Featured" sketch:type="MSLayerGroup" transform="translate(0.000000, 52.000000)">
                 <g id="Next-+-Previous" transform="translate(28.000000, 352.000000)" sketch:type="MSShapeGroup">
-                    <g id="Next" transform="translate(1366.000000, 18.000000) scale(-1, 1) translate(-1366.000000, -18.000000) translate(1348.000000, 0.000000)">
-                        <circle id="Oval-44" fill="#FFFFFF" cx="18" cy="18" r="18"></circle>
-                        <path d="M21,12 L15,18 L21,24" id="Path-51" stroke="#C9CDCF" stroke-width="2" transform="translate(18.000000, 18.000000) scale(-1, 1) translate(-18.000000, -18.000000) "></path>
+                    <g id="Previous">
+                        <g id="Oval-44-+-Path-51">
+                            <circle id="Oval-44" fill="#FFFFFF" filter="url(#filter-1)" cx="18" cy="18" r="18"></circle>
+                            <path d="M20,12 L14,18 L20,24" id="Path-51" stroke="#C9CDCF" stroke-width="2"></path>
+                        </g>
                     </g>
                 </g>
             </g>

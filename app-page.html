@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Page</title>
+    <link type="text/css" rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <!--[if IE]><script src="http://nettuts.s3.amazonaws.com/450_ooCss/http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!-- This makes IE recognize and use the HTML5 elements -->
+</head>
+<body>
+    <div class="nav">
+        <a href="/index.html">
+            <div class="nav__icon--back left"> <img src="assets/images/icons/left-arrow.svg" alt="left arrow" class="icon"></div>
+            <div class="nav__link left">Back to App Center</div>
+        </a>
+        SimpleChat
+        <div class="nav__link right highlight"><a href="" id="">My Apps (6)</a></div>
+        <div class="nav__icon--mobile right mobile"><img src="assets/images/icons/apps.svg" alt="My apps" class="icon"></div>
+    </div>
+    <!-- IS this okay BEM? -->
+    <div class="preview">
+        <div class="carousel__container">
+            <div class="carousel--single" >
+                <div class="carousel__item--single"><img src="assets/images/page/slideshow-slide.png"></div>
+                <div class="carousel__item--single"><img src="assets/images/page/slideshow-slide.png"></div>
+                <div class="carousel__item--single"><img src="assets/images/page/slideshow-slide.png"></div>
+                <div class="carousel__item--single"><img src="assets/images/page/slideshow-slide.png"></div>
+                <div class="carousel__item--single"><img src="assets/images/page/slideshow-slide.png"></div>
+            </div>
+            <div class="arrows">
+                <img class="prev icon left" src="assets/images/icons/left-arrow-circle.svg" alt="View previous">
+                <img class="next icon right" src="assets/images/icons/right-arrow-circle.svg" alt="View next">
+            </div>
+        </div>
+        <div class="sidebar--right apps__card--expanded apps__card right">
+            <img src="assets/images/simple-logo.svg">
+            <h1>SimpleChat</h1>
+            <h2>SimpleChat Inc.</h2>
+            <div class="rating">
+                <div class="rating--empty">&nbsp;</div>
+                <div class="rating--full rating--4">&nbsp;</div>
+            </div>
+            <span class="rating__amount"> (122)</span><br>
+            Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo.
+            <button class="button--primary">Add</button>
+            <table>
+                <tr>
+                    <th>$19/mo</th>
+                    <td>14 day free trial <img src=""></td>
+                </tr>
+                <tr>
+                    <th>Support</th>
+                    <td>
+                        <img src="assets/images/icons/phone2x.png" alt="Call support" class="icon">
+                        <img src="assets/images/icons/support2x.png" alt="Support icon" class="icon">
+                        <img src="assets/images/icons/mail2x.png" alt="Email for support"class="icon">
+                    </td>
+                </tr>
+                <tr class="sidebar__table--last">
+                    <th >Website</th>
+                    <td><a href="www.getchat.com" class="highlight">getchat.com</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="about">
+        <h1>About</h1>
+        Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.
+
+        <a href="" class="highlight">More</a>
+
+        <hr />
+        <h1>Reviews</h1>
+        <div class="large-rating">
+            <div class="large-rating--empty">&nbsp;</div>
+            <div class="large-rating--full large-rating--4">&nbsp;</div>
+        </div>
+        <span class="review">122 Reviews</span>
+        <a href="" class="highlight review">Review this app</a>
+        <div class="review">
+            <h1>This app has taken me to new heights!</h1>
+            <div class="rating">
+                <div class="rating--empty">&nbsp;</div>
+                <div class="rating--full">&nbsp;</div>
+            </div>
+            <span class="author">David Odemchuck &nbsp; - &nbsp; Feb 14, 2015</span>
+            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                ut fermentum massa justo sit amet risus. Aenean lacinia
+                bibendum nulla sed consectetur. Maecenas faucibus mollis
+                interdum.</p>
+        </div>
+        <div class="review">
+            <h1>This app is a huge time saver, love it!</h1>
+            <div class="rating">
+                <div class="rating--empty">&nbsp;</div>
+                <div class="rating--full">&nbsp;</div>
+            </div>
+            <span class="author">Dan Veltri  &nbsp;- &nbsp; June 14, 2015</span>
+            <p>
+            Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Donec id elit non mi porta gravida at eget metus. Nulla vitae elit libero, a pharetra augue.
+            </p>
+        </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="assets/slick/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>

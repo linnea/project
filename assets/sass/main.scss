@@ -1,12 +1,13 @@
 // required
 @import "base";
-@import "media-queries";
 @import "layout";
 
 // modules
 @import "modules/normalize";
 @import "modules/text";
 @import "modules/modules";
+
+@import "media-queries";
 
 //reduces HTTP requests & improves performance
 

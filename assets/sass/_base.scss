@@ -1,5 +1,17 @@
-// Includes normalize.css,
-// and also sets styles on base elements: html, body, a, ul, li, etc.
+// mixins, functions, and main page styles
+
+///////////////
+// VARIABLES //
+///////////////
+$base__font-size: 16 !default;
+$text__family--base: 'Proxima Nova', sans-serif;
+$font--color: #666C70;
+$font__head-color: #363B3E;
+$font__body-color: #9BA0A3;
+$highlight-color: #1F8EED;
+$border--color: #C9CDCF;
+$shadow: rgba(0, 0, 0, 0.1);
+
 
 ///////////////
 // FUNCTIONS //
@@ -10,10 +22,18 @@
   @return ($px / $base) * 1em;
 }
 
-
 ////////////////
 //   MIXINS   //
 ////////////////
+
+// text mixin
+@mixin text($size, $line, $weight: normal, $family: $text__family--base, $margin: 0) {
+  font-size: em($size);
+  line-height: ($line/$size);
+  font-family: $family;
+  font-weight: $weight;
+  margin-bottom: em($margin, $size);
+}
 
 // handles webkit, moz, etc.
 @mixin shadow($top, $left, $blur, $color, $inset: false) {
@@ -36,15 +56,59 @@
 }
 
 // breakpoint mixin
-@mixin breakpoint($point) {
-  @if $point == large {
-    @media (min-width: 64.375em) { @content; }
+@mixin break($breakpoint) {
+  @if $breakpoint == "small" {
+    @media (max-width: 40em) {
+      @content;
+    }
   }
-  @else if $point == medium {
-    @media (min-width: 50em) { @content; }
+
+  @else if $breakpoint == "medium" {
+    @media (max-width: 64em) {
+      @content;
+    }
   }
-  @else if $point == small {
-    @media (min-width: 37.5em)  { @content; }
+
+  @else if $breakpoint == "large" {
+    @media (min-width: 90em) {
+      @content;
+    }
+  }
+}
+
+// placeholder text mixin
+@mixin place-style($color) {
+  input::-webkit-input-placeholder {
+    color: $color;
+  }
+  input::-moz-placeholder {
+    color: $color;
+  }
+  input:-moz-placeholder {   /* Older versions of Firefox */
+    color: $color;
+  }
+  input:-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+// scaleable rating mixin!
+// omg this is great
+@mixin rating($width, $star-size, $margin) {
+  &--full {
+    background-image: url("../../assets/images/icons/star-fill.svg");
+    width: $width;
+    height: $star-size;
+    margin: -($star-size) 0 $margin 0;
+    display: block;
+  }
+  &--empty {
+    background-image: url("../../assets/images/icons/star-empty.svg");
+    width: $width;
+    height: $star-size;
+  }
+  &--4 {
+    width: 80%;
   }
 }
 
@@ -69,4 +133,10 @@
 
 .right {
   float: right;
+}
+
+hr {
+  border:none;
+  border-bottom: 1px solid $shadow;
+  margin-bottom: 40px;
 }

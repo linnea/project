@@ -1,0 +1,59 @@
+.mobile, .med {
+  display: none;
+}
+@media (max-width: 900px) {
+  .med {
+    display: inline;
+  }
+}
+
+@include break(small) {
+  .mobile {
+    display: inline;
+  }
+}
+
+// HEADER QUERIES!
+.nav {
+  @include break(small) {
+    .nav__link {
+      display: none;
+    }
+  }
+}
+
+// FILTER QUERY
+.filter {
+  @include break(small) {
+    margin-left: 0;
+    margin-right: 0;
+
+    &__item {
+      @include text(14, 20);
+      width: 48% !important;
+      margin-right: 5px;
+
+      &.search {
+        padding-left: 50px;
+      }
+    }
+  }
+}
+
+// APPS
+.apps {
+  @include break(medium) {
+    padding-top: 30px;
+  }
+
+  @include break(small) {
+    padding-top: 20px;
+    &--analytics, &--marketing {
+      height: 280px;
+    }
+    .apps__card {
+      width: 165px;
+      height: 280px;
+    }
+  }
+}
