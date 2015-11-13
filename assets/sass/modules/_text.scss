@@ -1,0 +1,49 @@
+$base__font-size: 16 !default;
+$text__family--base: 'Proxima Nova', sans-serif;
+$font--color: #666C70;
+$font__head-color: #363B3E;
+$font__body-color: #9BA0A3;
+$font--highlight-color: #1F8EED;
+
+
+@mixin text($size, $line, $family: $text__family--base, $margin: 0) {
+  font-size: em($size);
+  line-height: ($line/$size);
+  font-family: $family;
+  margin-bottom: em($margin, $size);
+}
+
+html {
+  font-size: $base__font-size * 1px;
+  color: $font--color;
+}
+
+html a {
+  text-decoration: none;
+  color: $font--color;
+}
+
+body {
+  font-size: em(16);
+  font-family: "Proxima Nova", sans-serif;
+  line-height: (16/$base__font-size);
+}
+
+.highlight, .highlight a {
+  color: $font--highlight-color !important;
+}
+
+.icon {
+  vertical-align: middle;
+}
+
+h1 {
+  font-size: em(18);
+  line-height: 22px;
+  font-weight: normal;
+  color: $font__head-color
+}
+
+.apps h1 {
+  display: block;
+}

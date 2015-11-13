@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="122px" height="86px" viewBox="0 0 122 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.1 (15681) - http://www.bohemiancoding.com/sketch -->
+    <title>App Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feMorphology radius="1" in="SourceAlpha" operator="dilate" result="shadowSpreadInner1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadInner1" result="shadowOffsetInner1"></feOffset>
+            <feGaussianBlur stdDeviation="0" in="shadowOffsetInner1" result="shadowBlurInner1"></feGaussianBlur>
+            <feComposite in="shadowBlurInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.07 0" in="shadowInnerInner1" type="matrix" result="shadowMatrixInner1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="App-Center" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="1.0-All-Apps" sketch:type="MSArtboardGroup" transform="translate(-733.000000, -640.000000)">
+            <g id="All-Apps" sketch:type="MSLayerGroup" transform="translate(40.000000, 574.000000)">
+                <g id="E-Commerce" sketch:type="MSShapeGroup">
+                    <g id="SimpleChat" transform="translate(672.000000, 45.000000)">
+                        <g id="App-Icon" transform="translate(21.000000, 21.000000)">
+                            <rect id="App-Icon-Bg" fill="#FFFFFF" filter="url(#filter-1)" x="0" y="0" width="122" height="86" rx="4"></rect>
+                            <path d="M50.6470588,64 C50.6470588,64 53.1691878,57.0043411 56.6764706,55.5151515 C60.244898,54 62.7058824,54.3030303 62.7058824,54.3030303 C62.7058824,54.3030303 82,56.7272727 82,40.3636364 C82,24 61,25 61,25 C61,25 41,24 41,40.3636364 C41,48.5454545 47.3777778,52.1818182 47.3777778,52.1818182" id="Path-98-Copy-2" stroke="#E4C868" stroke-width="6"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

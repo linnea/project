@@ -1,0 +1,72 @@
+// Includes normalize.css,
+// and also sets styles on base elements: html, body, a, ul, li, etc.
+
+///////////////
+// FUNCTIONS //
+///////////////
+
+// convert px to em
+@function em ($px, $base: 16) {
+  @return ($px / $base) * 1em;
+}
+
+
+////////////////
+//   MIXINS   //
+////////////////
+
+// handles webkit, moz, etc.
+@mixin shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+    -moz-box-shadow:inset $top $left $blur $color;
+    box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+    -moz-box-shadow: $top $left $blur $color;
+    box-shadow: $top $left $blur $color;
+  }
+}
+
+// border radius quick fix
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+  background-clip: padding-box;
+}
+
+// breakpoint mixin
+@mixin breakpoint($point) {
+  @if $point == large {
+    @media (min-width: 64.375em) { @content; }
+  }
+  @else if $point == medium {
+    @media (min-width: 50em) { @content; }
+  }
+  @else if $point == small {
+    @media (min-width: 37.5em)  { @content; }
+  }
+}
+
+///////////////
+//   OTHER   //
+///////////////
+
+* {
+  box-sizing: border-box !important;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    list-style-type: none;
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}

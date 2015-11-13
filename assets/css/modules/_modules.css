@@ -1,0 +1,15 @@
+.nav {
+  width: 98%;
+  min-height: 54px;
+  text-align: center;
+}
+
+.nav__left {
+  float: left;
+  display: inline;
+}
+
+.nav__right {
+  float: right;
+  display: inline;
+}

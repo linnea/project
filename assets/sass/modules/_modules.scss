@@ -1,0 +1,136 @@
+$border--color: #C9CDCF;
+
+// navbar module
+.nav {
+  width: 100%;
+  min-height: 54px;
+  text-align: center;
+  vertical-align: middle;
+  @include shadow(0px, 1px, 0px, rgba(0, 0, 0, 0.1));
+  line-height: em(54);
+  padding: 0 42px 0 42px;
+  font-weight: 600;
+  font-size: em(18);
+
+  &__link {
+    display: inline;
+    font-weight: normal;
+  }
+}
+
+// filter items
+.filter__item {
+  border: 1px solid $border--color;
+  padding: 10px 20px 10px 20px;
+  text-align: left;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  .icon {
+    position: absolute;
+    top: 16.5px;
+    right: 20px;
+  }
+}
+
+// search addon for the filter module
+.search {
+  background-image: url(../../images/icons/left-arrow.svg);
+  background-repeat:no-repeat;
+  padding-left:20px;
+}
+
+// static carousel
+.carousel {
+  height: 100%;
+  position: relative;
+  width: 100%;
+
+  &__item img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .slick-track, .slick-slider, .slick-slide {
+    padding: 0;
+    margin: 0;
+  }
+  /* the slides */
+  .slick-slide {
+    margin: 0 5px;
+  }
+  /* the parent */
+  .slick-list {
+    margin: 0 -5px;
+  }
+}
+
+.slick-arrow {
+  @include shadow(0px, 2px, 4px, rgba(0, 0, 0, 0.5));
+  border-radius: 25px;
+  width: 36px;
+  height: 36px;
+}
+
+.prev, .next {
+  position: relative;
+  bottom: 60px;
+  z-index: 1;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev {
+  left: 10px;
+}
+
+// Cards
+.apps__title {
+  display: inline-block;
+}
+.apps__card {
+  display: inline-block;
+  background-color: white;
+  width: 204px;
+  height: 259px;
+  padding: 20px;
+  font-size: em(14);
+  line-height: 20px;
+  color: $font__body-color;
+  border: 1px solid $border--color;
+  @include border-radius(2px);
+  margin-right: 20px;
+  position: relative;
+  float: left;
+  white-space: normal;
+
+  h2 {
+    font-weight: 600;
+    font-size: 1em;
+    display: block;
+    color: $font-_head-color;
+  }
+
+  h3 {
+    font-size: em(14, 14);
+    font-weight: 600;
+    position: absolute;
+    bottom: 0px;
+  }
+}
+
+//rating system
+.card__rating--full {
+  background-image: url('../../images/icons/star-fill.png');
+  width: 100px;
+  height: 10px;
+  display: block;
+}
+
+.card__rating--empty {
+  background-image: url('../../images/icons/star-fill.png');
+  background-size: 100% 100%;
+  width: 100px;
+}
