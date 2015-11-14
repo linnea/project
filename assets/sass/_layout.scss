@@ -92,3 +92,14 @@ body.light {
   background-color: white;
   height: 100%;
 }
+
+.apps__arrow--more {
+  position: absolute;
+  right: 40px;
+  line-height: 22px;
+
+  img {
+    -webkit-filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5) );
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5) );
+  }
+}

@@ -1,0 +1,22 @@
+  // filter items and search addon
+  .filter__item {
+    border: 1px solid $border--color;
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    .icon {
+      position: absolute;
+      top: 16.5px;
+      right: 20px;
+    }
+  }
+
+  // search addon for the filter module
+  .search {
+    background: url("../../assets/images/icons/search.svg") no-repeat 10%;
+    padding-left: 40px;
+  }
+  // overwrite placeholder text color
+  @include place-style($font--color);

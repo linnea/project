@@ -1,0 +1,123 @@
+// Cards
+.apps__title {
+  display: inline-block !important;
+  margin-bottom: 25px;
+}
+.apps__card {
+  display: inline-block;
+  background-color: white;
+  width: 204px;
+  height: 259px;
+  padding: 20px;
+  font-size: em(14);
+  line-height: 20px;
+  color: $font__body-color;
+  border: 1px solid $border--color;
+  @include border-radius(2px);
+  white-space: normal;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+
+  h2 {
+    font-weight: 600;
+    font-size: 1em;
+    display: block;
+    color: $font-_head-color;
+  }
+
+  h3 {
+    font-size: em(14, 14);
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &:hover, &:active, &:focus {
+    @include shadow(0, 2px, 10px, $shadow);
+    border-color: #7AC1FF;
+  }
+}
+
+
+
+// EXPANDED CARD
+.apps__card--expanded {
+  position: relative;
+  height: 490px;
+  width: 342px;
+  color: $font--body-color;
+  padding: 40px 40px 0 40px;
+
+  .logo {
+    border: 1px solid $shadow;
+    @include border-radius(4px);
+    margin-bottom: 10px;
+  }
+  h1 {
+    font-size: em(28, 14);
+    margin-bottom: 5px;
+  }
+  h2 {
+    color: $font__body-color;
+    font-weight: normal;
+    display: inline-block;
+    margin: 5px 20px 10px 0;
+  }
+  .rating {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+  .rating__amount {
+    color: $border--color;
+  }
+
+  .button--primary {
+    margin: 20px 0 20px 0;
+  }
+
+  table {
+    position: absolute;
+    border-bottom: $border--color;
+    bottom: 0;
+    width: 88.5%;
+  }
+
+  th {
+    font-size: em(16, 14);
+    color: $font__head-color;
+    text-align: left;
+  }
+
+  tr {
+    border-bottom: 1px solid $border--color;
+    height: 49px;
+    .icon {
+      margin-right: 20px;
+      width: 20px;
+    }
+  }
+
+  td {
+    font-size: em(16, 14);
+  }
+
+  .trial, p {
+    color: #586066;
+  }
+
+  .sidebar__table--last {
+    border-bottom: none;
+  }
+
+}
+
+// BIG PRETTY BLUE BUTTON
+.button--primary {
+  width: 164px;
+  height: 44px;
+  background-color: $highlight-color;
+  color: white;
+  border: none;
+  @include border-radius(22px);
+}

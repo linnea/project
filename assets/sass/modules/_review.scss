@@ -1,0 +1,19 @@
+// REVIEW {
+.review {
+  h1 {
+    margin-bottom: 10px;
+    font-size: em(16)
+  }
+
+  .rating, span.author {
+    display: inline-block;
+    line-height: em(16, 18);
+  }
+  span.author {
+    color: $font__body-color;
+  }
+
+  p {
+    margin: em(10) 0 em(40) 0;
+  }
+}

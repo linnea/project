@@ -1,0 +1,12 @@
+
+//rating system
+.rating {
+  width: 95px;
+  @include rating(95px, 12px, 10px);
+}
+
+.large-rating {
+  width: 140px;
+  @include rating(140px, 18px, 40px);
+}
+
